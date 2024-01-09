@@ -17,6 +17,13 @@ const stytch = createStytchB2BUIClient(
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="An example Next.js B2B application using Stytch for authentication"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <StytchB2BProvider stytch={stytch}>
         <main>
           <div className="container">
