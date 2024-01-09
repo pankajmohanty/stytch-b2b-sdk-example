@@ -19,35 +19,6 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
-        <header>
-          <Link className="header" href="/">
-            <Image alt="sdf" src="/logo.svg" width={190} height={200} />
-          </Link>
-          <div className="link-container">
-            <Link
-              className="header"
-              target="_blank"
-              href="https://www.stytch.com/docs/b2b"
-            >
-              Stytch Docs
-            </Link>
-            <Link
-              className="header"
-              target="_blank"
-              href="https://github.com/stytchauth/stytch-b2b-nextjs-example"
-            >
-              <Image
-                alt="Github"
-                src="/github.svg"
-                width={20}
-                height={20}
-                style={{ marginRight: "4px" }}
-              />
-              View on Github
-            </Link>
-          </div>
-        </header>
         <body>
           <Main />
           <NextScript />
