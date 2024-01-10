@@ -14,7 +14,7 @@ const LoginOrSignupDiscoveryForm = () => {
       products: [B2BProducts.emailMagicLinks],
       sessionOptions: { sessionDurationMinutes: 60 },
       emailMagicLinksOptions: {
-        discoveryRedirectURL: `${window.location.origin}/auth`,
+        discoveryRedirectURL: `${window.location.origin}/authenticate`,
       },
       authFlowType: AuthFlowType.Discovery,
     });
