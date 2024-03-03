@@ -1,10 +1,10 @@
 import "../styles/stytch.css";
 import type { AppProps } from "next/app";
-import { StytchB2BProvider, useStytchB2BUIClient } from "@stytch/nextjs/b2b";
+import { StytchB2BProvider, useStytchB2BClient } from "@stytch/nextjs/b2b";
 import React from "react";
 import Head from "next/head";
 
-const stytch = useStytchB2BUIClient(
+const stytch = useStytchB2BClient(
   process.env.NEXT_PUBLIC_STYTCH_PUBLIC_TOKEN ?? "",
   {
     cookieOptions: {
