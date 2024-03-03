@@ -4,15 +4,13 @@ import { StytchB2BProvider, useStytchB2BClient } from "@stytch/nextjs/b2b";
 import React from "react";
 import Head from "next/head";
 
-const stytch = useStytchB2BClient(
-  process.env.NEXT_PUBLIC_STYTCH_PUBLIC_TOKEN ?? "",
-  {
-    cookieOptions: {
-      jwtCookieName: `stytch_session_jwt_next_b2b_app`,
-      opaqueTokenCookieName: `stytch_session_next_b2b_app`,
-    },
-  }
-);
+const stytch = useStytchB2BClient();
+StytchB2BProvider.init({
+  publicToken: process.env.NEXT_PUBLIC_STYTCH_PUBLIC_TOKEN ?? "",
+  cookieOptions: {
+    jwtCookieName: `stytch_session_jwt_next_b2b_app`,
+  },
+});
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
