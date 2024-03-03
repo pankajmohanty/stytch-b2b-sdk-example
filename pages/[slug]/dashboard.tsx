@@ -293,7 +293,7 @@ const OrgTodos = () => {
 const DashboardContainer = () => {
   const stytch = useStytchB2BClient();
   const router = useRouter();
-  const { member, isInitialized: memberIsInitialized } = useStytchMember();
+  const { member, isInitialized } = useStytchMember();
   const { session, isInitialized: sessionIsInitialized } = useStytchMemberSession();
 
   const [org, setOrg] = useState<{ loaded: boolean; org: Organization | null }>({
