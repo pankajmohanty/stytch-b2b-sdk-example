@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import {
   useStytchB2BClient,
